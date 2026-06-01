@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved — Heads Up Mentors</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #options {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px; align-items: start;
+    }
+
+    .involve-card {
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 36px rgba(44,36,22,0.1);
+      transition: transform 0.25s;
+    }
+
+    .involve-card:hover { transform: translateY(-5px); }
+
+    .involve-card-header {
+      padding: 44px 40px 32px;
+    }
+
+    .student-header { background: var(--yellow); }
+    .mentor-header  { background: var(--purple); }
+
+    .involve-card-header .card-icon {
+      font-size: 3rem; margin-bottom: 16px; display: block;
+    }
+
+    .involve-card-header h2 {
+      font-size: 1.9rem; font-weight: 900;
+      letter-spacing: -0.5px; margin-bottom: 10px;
+    }
+
+    .student-header h2 { color: var(--text); }
+    .mentor-header h2  { color: var(--yellow); }
+
+    .involve-card-header p {
+      font-size: 0.95rem; line-height: 1.7;
+    }
+
+    .student-header p { color: var(--text); opacity: 0.75; }
+    .mentor-header p  { color: var(--lavender); }
+
+    .involve-card-body {
+      padding: 32px 40px 40px;
+      background: var(--cream);
+    }
+
+    .involve-list {
+      list-style: none; margin-bottom: 32px;
+    }
+
+    .involve-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 0.92rem; color: var(--mid);
+      line-height: 1.6; padding: 10px 0;
+      border-bottom: 1px solid var(--cream2);
+    }
+
+    .involve-list li:last-child { border-bottom: none; }
+
+    .involve-list li::before {
+      content: '✓';
+      font-weight: 800; font-size: 0.85rem;
+      color: var(--purple);
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    /* closed form notice */
+    .closed-notice {
+      background: var(--cream2);
+      border: 2px solid var(--amber);
+      border-radius: 14px;
+      padding: 18px 22px;
+      font-size: 0.88rem; color: var(--mid);
+      line-height: 1.6; margin-bottom: 20px;
+    }
+
+    .closed-notice strong { color: var(--text); }
+
+    /* contact section */
+    #contact-section {
+      background: var(--cream2);
+      text-align: center;
+    }
+
+    .contact-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; margin-top: 48px;
+    }
+
+    .contact-card {
+      background: var(--cream);
+      border-radius: 20px; padding: 32px 24px;
+      box-shadow: 0 4px 18px rgba(44,36,22,0.07);
+    }
+
+    .contact-card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .contact-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .contact-card a {
+      font-size: 0.88rem; color: var(--purple); text-decoration: none; font-weight: 600;
+    }
+    .contact-card a:hover { text-decoration: underline; }
+    .contact-card p { font-size: 0.85rem; color: var(--mid); }
+
+    @media (max-width: 860px) {
+      #options { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-body">
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <h1>Get Involved</h1>
+  <p>Join our community as a student seeking mentorship or a mentor ready to make an impact.</p>
+</div>
+
+<section id="options">
+  <!-- STUDENT CARD -->
+  <div class="involve-card fade-up">
+    <div class="involve-card-header student-header">
+      <span class="card-icon">📚</span>
+      <h2>Become a Student</h2>
+      <p>Get matched with a mentor who can help you grow academically and personally — completely free.</p>
+    </div>
+    <div class="involve-card-body">
+      <ul class="involve-list">
+        <li>Free one-on-one or group mentoring sessions</li>
+        <li>Academic support across a variety of subjects</li>
+        <li>Mentors who genuinely care about your success</li>
+        <li>Flexible scheduling to fit your life</li>
+        <li>Open to students of all backgrounds and grade levels</li>
+      </ul>
+      <a class="btn-primary" href="https://headsupmentorsbecomeandbook.carrd.co/" target="_blank">Apply as a Student →</a>
+    </div>
+  </div>
+
+  <!-- MENTOR CARD -->
+  <div class="involve-card fade-up">
+    <div class="involve-card-header mentor-header">
+      <span class="card-icon">🌟</span>
+      <h2>Become a Mentor</h2>
+      <p>Share your knowledge, build leadership skills, and make a lasting difference in a student's life.</p>
+    </div>
+    <div class="involve-card-body">
+      <ul class="involve-list">
+        <li>Lead sessions in subjects you're passionate about</li>
+        <li>Build real mentorship and leadership experience</li>
+        <li>Join a driven, student-led team</li>
+        <li>Gain community service hours</li>
+        <li>Make a measurable impact on students' futures</li>
+      </ul>
+      <div class="closed-notice">
+        <strong>Mentor applications are currently closed.</strong> Check back soon or follow us on Instagram <a href="https://www.instagram.com/headsupmentors/" target="_blank">@headsupmentors</a> for updates on when the next cycle opens.
+      </div>
+      <a class="btn-outline" href="https://docs.google.com/forms/d/e/1FAIpQLSffLb7aMItOHTRDKDBcqwzBM_-QmWz6o4QwSWR9rjCYWQHmKg/closedform" target="_blank">View Mentor Application</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact-section">
+  <span class="section-tag">Reach Out</span>
+  <h2 class="section-title">Have Questions?</h2>
+  <p class="section-sub" style="margin: 0 auto 0; text-align: center;">We'd love to hear from you. Connect with us through any of the channels below.</p>
+  <div class="contact-grid">
+    <div class="contact-card fade-up">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <a href="mailto:headsupmentors@gmail.com">headsupmentors@gmail.com</a>
+    </div>
+    <div class="contact-card fade-up">
+      <div class="icon">📸</div>
+      <h3>Instagram</h3>
+      <a href="https://www.instagram.com/headsupmentors/" target="_blank">@headsupmentors</a>
+      <p>DMs open for questions</p>
+    </div>
+    <div class="contact-card fade-up">
+      <div class="icon">💼</div>
+      <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/company/heads-up-mentors" target="_blank">Heads Up Mentors</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>

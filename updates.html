@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Updates — Heads Up Mentors</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #updates-main {
+      background: var(--cream);
+      min-height: 50vh;
+    }
+
+    .updates-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 56px; align-items: start;
+    }
+
+    /* External link card */
+    .external-card {
+      background: var(--yellow);
+      border-radius: 24px;
+      padding: 44px 40px;
+      display: flex; flex-direction: column;
+      align-items: flex-start; gap: 20px;
+      box-shadow: 0 12px 40px rgba(44,36,22,0.12);
+    }
+
+    .external-card h3 {
+      font-size: 1.4rem; font-weight: 800;
+      color: var(--text); letter-spacing: -0.3px;
+    }
+
+    .external-card p {
+      font-size: 0.93rem; color: var(--text);
+      line-height: 1.7; opacity: 0.75;
+    }
+
+    /* Sidebar */
+    .updates-sidebar {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+
+    .sidebar-card {
+      background: var(--cream2);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 18px rgba(44,36,22,0.07);
+    }
+
+    .sidebar-card h4 {
+      font-size: 0.85rem; font-weight: 700;
+      color: var(--text); margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    .sidebar-card .social-link {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--cream);
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-weight: 600; font-size: 0.85rem;
+      margin-bottom: 10px;
+      transition: background 0.2s;
+    }
+
+    .sidebar-card .social-link:last-child { margin-bottom: 0; }
+    .sidebar-card .social-link:hover { background: var(--purple); color: var(--cream); }
+
+    .sidebar-card p {
+      font-size: 0.85rem; color: var(--mid); line-height: 1.65;
+    }
+
+    @media (max-width: 860px) {
+      .updates-layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-body">
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <h1>Updates & Events</h1>
+  <p>Stay up to date on what's happening at Heads Up Mentors.</p>
+</div>
+
+<section id="updates-main">
+  <div class="updates-layout">
+    <div class="fade-up">
+      <span class="section-tag">Latest News</span>
+      <h2 class="section-title">What's Going On at HUM</h2>
+      <p class="section-sub">Our full updates and events page is hosted externally. Visit the link below for the latest news, session announcements, and event information.</p>
+
+      <div class="external-card">
+        <span style="font-size: 2.5rem;">📋</span>
+        <h3>HUM Updates & Events Page</h3>
+        <p>View our full calendar of events, session updates, and announcements — updated regularly by our team.</p>
+        <a class="btn-primary" href="https://headsupmentorsupdatesandevents.carrd.co/" target="_blank">View All Updates →</a>
+      </div>
+
+      <br/><br/>
+
+      <p class="section-sub" style="font-size: 0.88rem;">Want to make sure you never miss an update? Follow us on social media where we announce new sessions, events, and mentor application openings in real time.</p>
+    </div>
+
+    <div class="updates-sidebar fade-up">
+      <div class="sidebar-card">
+        <h4>Follow Us</h4>
+        <a class="social-link" href="https://www.instagram.com/headsupmentors/" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a class="social-link" href="https://www.facebook.com/headsupmentors.hum/" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/company/heads-up-mentors" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Contact Us</h4>
+        <p>Have questions about upcoming events or sessions?</p>
+        <br/>
+        <a class="btn-primary" href="mailto:headsupmentors@gmail.com" style="font-size:0.82rem; padding: 10px 22px;">Email Our Team</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Get Involved</h4>
+        <p>Ready to join as a student or mentor? Applications are open.</p>
+        <br/>
+        <a class="btn-yellow" href="get-involved.html" style="font-size:0.82rem; padding: 10px 22px;">See Options →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Heads Up Mentors</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── ABOUT STORY ── */
+    #story {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center;
+    }
+
+    .story-text .section-sub { max-width: 100%; }
+
+    .story-highlight {
+      background: var(--yellow);
+      border-radius: 18px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      font-size: 1.05rem; font-weight: 600;
+      color: var(--text); line-height: 1.6;
+      position: relative;
+    }
+
+    .story-highlight::before {
+      content: '"';
+      font-size: 4rem; font-weight: 900;
+      color: var(--amber); line-height: 1;
+      position: absolute; top: 8px; left: 20px;
+      opacity: 0.6;
+    }
+
+    .story-highlight p { padding-left: 32px; }
+
+    .story-image img {
+      width: 100%; border-radius: 24px;
+      box-shadow: 0 24px 56px rgba(44,36,22,0.16);
+      object-fit: cover; aspect-ratio: 3/4;
+    }
+
+    /* ── VALUES ── */
+    #values {
+      background: var(--cream2);
+    }
+
+    .values-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      margin-top: 48px;
+    }
+
+    .value-card {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 36px 28px;
+      border-left: 4px solid var(--purple);
+      box-shadow: 0 4px 18px rgba(44,36,22,0.07);
+    }
+
+    .value-icon {
+      font-size: 2.2rem; margin-bottom: 16px;
+    }
+
+    .value-title {
+      font-size: 1.1rem; font-weight: 800;
+      color: var(--text); margin-bottom: 10px;
+    }
+
+    .value-desc {
+      font-size: 0.9rem; color: var(--mid); line-height: 1.7;
+    }
+
+    /* ── GALLERY ── */
+    #gallery {
+      background: var(--cream);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); gap: 16px;
+      margin-top: 48px;
+    }
+
+    .gallery-grid img {
+      width: 100%; border-radius: 16px;
+      object-fit: cover; aspect-ratio: 4/3;
+      box-shadow: 0 6px 20px rgba(44,36,22,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 14px 36px rgba(44,36,22,0.18);
+    }
+
+    /* ── PARTNERS ── */
+    #partners {
+      background: var(--cream2);
+    }
+
+    .partners-row {
+      display: flex; align-items: center;
+      justify-content: center;
+      gap: 56px; flex-wrap: wrap; margin-top: 48px;
+    }
+
+    .partners-row img {
+      height: 68px; object-fit: contain;
+      filter: grayscale(100%); opacity: 0.6;
+      transition: filter 0.25s, opacity 0.25s;
+    }
+
+    .partners-row img:hover { filter: none; opacity: 1; }
+
+    @media (max-width: 860px) {
+      #story { grid-template-columns: 1fr; }
+      .story-image { display: none; }
+      .values-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body class="page-body">
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>About Heads Up Mentors</h1>
+  <p>Learn who we are, what we believe, and why we do what we do.</p>
+</div>
+
+<!-- STORY -->
+<section id="story">
+  <div class="story-text fade-up">
+    <span class="section-tag">Our Story</span>
+    <h2 class="section-title">Built by Students, For Students</h2>
+    <p class="section-sub">Founded in 2019, Heads Up Mentors started with a simple belief: every student deserves access to mentoring, regardless of background or circumstance. As a student-led organization, we know what it's like to need guidance — and we're here to provide it.</p>
+    <p class="section-sub">We provide completely <strong>free mentoring</strong> focused on empowering a new generation through teaching, connection, and community. We've grown to reach students across multiple countries and continue to expand our impact.</p>
+    <div class="story-highlight">
+      <p>We believe that ALL students deserve the same educational opportunities to succeed.</p>
+    </div>
+  </div>
+  <div class="story-image fade-up">
+    <img src="https://headsupmentorshome.carrd.co/assets/images/image01.png?v=fd509c23" alt="HUM in action" />
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="values">
+  <div style="text-align: center;" class="fade-up">
+    <span class="section-tag">What We Stand For</span>
+    <h2 class="section-title">Our Core Values</h2>
+  </div>
+  <div class="values-grid">
+    <div class="value-card fade-up">
+      <div class="value-icon">🎓</div>
+      <div class="value-title">Access for All</div>
+      <p class="value-desc">We believe educational opportunity shouldn't depend on zip code, income, or circumstance. Mentoring is free — full stop.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🤝</div>
+      <div class="value-title">Student Leadership</div>
+      <p class="value-desc">Our program is entirely student-led. We learn alongside the students we serve, growing together every step of the way.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🌍</div>
+      <div class="value-title">Community Impact</div>
+      <p class="value-desc">From local classrooms to international reach, we build community through mentorship that uplifts individuals and strengthens the whole.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="fade-up">
+    <span class="section-tag">In Action</span>
+    <h2 class="section-title">HUM in the Community</h2>
+  </div>
+  <div class="gallery-grid">
+    <img class="fade-up" src="https://headsupmentorshome.carrd.co/assets/images/gallery01/0ad653ba.jpg?v=fd509c23" alt="HUM session" />
+    <img class="fade-up" src="https://headsupmentorshome.carrd.co/assets/images/gallery01/97e61e13.jpg?v=fd509c23" alt="HUM activity" />
+    <img class="fade-up" src="https://headsupmentorshome.carrd.co/assets/images/gallery01/51afdb2f.jpg?v=fd509c23" alt="HUM community" />
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div style="text-align: center;" class="fade-up">
+    <span class="section-tag">Partners</span>
+    <h2 class="section-title">Organizations Who Believe in Our Mission</h2>
+  </div>
+  <div class="partners-row fade-up">
+    <img src="https://headsupmentorshome.carrd.co/assets/images/gallery02/13d4cb9b.jpg?v=fd509c23" alt="Partner" />
+    <img src="https://headsupmentorshome.carrd.co/assets/images/gallery02/035ffdde.png?v=fd509c23" alt="Partner" />
+    <img src="https://headsupmentorshome.carrd.co/assets/images/gallery02/e209a866.png?v=fd509c23" alt="Partner" />
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>
