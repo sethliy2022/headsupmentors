@@ -1,4 +1,4 @@
-/* ── RESET & ROOT ── */
+/* â”€â”€ RESET & ROOT â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
+/* â”€â”€ NAV â”€â”€ */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
@@ -120,10 +120,10 @@ nav {
   text-align: center; margin-top: 8px;
 }
 
-/* ── PAGE WRAPPER ── */
+/* â”€â”€ PAGE WRAPPER â”€â”€ */
 .page-body { padding-top: 70px; }
 
-/* ── SECTIONS ── */
+/* â”€â”€ SECTIONS â”€â”€ */
 section { padding: 88px 8%; }
 
 .section-tag {
@@ -153,7 +153,7 @@ section { padding: 88px 8%; }
   margin-bottom: 48px;
 }
 
-/* ── BUTTONS ── */
+/* â”€â”€ BUTTONS â”€â”€ */
 .btn-primary {
   background: var(--purple);
   color: var(--cream);
@@ -196,14 +196,14 @@ section { padding: 88px 8%; }
 
 .btn-outline:hover { background: var(--purple); color: var(--cream); }
 
-/* ── ANIMATIONS ── */
+/* â”€â”€ ANIMATIONS â”€â”€ */
 .fade-up {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 footer {
   background: var(--text);
   padding: 56px 8% 32px;
@@ -247,7 +247,7 @@ footer {
 
 .footer-bottom a { color: var(--gold); text-decoration: none; }
 
-/* ── SOCIALS ── */
+/* â”€â”€ SOCIALS â”€â”€ */
 .social-row {
   display: flex; gap: 12px; flex-wrap: wrap;
 }
@@ -265,7 +265,7 @@ footer {
 
 .social-link:hover { background: var(--purple); color: var(--cream); }
 
-/* ── PAGE HERO BANNER ── */
+/* â”€â”€ PAGE HERO BANNER â”€â”€ */
 .page-hero {
   background: var(--yellow);
   padding: 72px 8% 64px;
@@ -293,7 +293,7 @@ footer {
   position: relative; z-index: 1;
 }
 
-/* ── RESPONSIVE ── */
+/* â”€â”€ RESPONSIVE â”€â”€ */
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
