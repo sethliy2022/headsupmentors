@@ -1,4 +1,4 @@
-/* â”€â”€ RESET & ROOT â”€â”€ */
+/* ── RESET & ROOT ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* â”€â”€ NAV â”€â”€ */
+/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
@@ -120,10 +120,10 @@ nav {
   text-align: center; margin-top: 8px;
 }
 
-/* â”€â”€ PAGE WRAPPER â”€â”€ */
+/* ── PAGE WRAPPER ── */
 .page-body { padding-top: 70px; }
 
-/* â”€â”€ SECTIONS â”€â”€ */
+/* ── SECTIONS ── */
 section { padding: 88px 8%; }
 
 .section-tag {
@@ -153,7 +153,7 @@ section { padding: 88px 8%; }
   margin-bottom: 48px;
 }
 
-/* â”€â”€ BUTTONS â”€â”€ */
+/* ── BUTTONS ── */
 .btn-primary {
   background: var(--purple);
   color: var(--cream);
@@ -196,16 +196,16 @@ section { padding: 88px 8%; }
 
 .btn-outline:hover { background: var(--purple); color: var(--cream); }
 
-/* â”€â”€ ANIMATIONS â”€â”€ */
+/* ── ANIMATIONS ── */
 .fade-up {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-/* â”€â”€ FOOTER â”€â”€ */
+/* ── FOOTER ── */
 footer {
-  background: var(--text);
+  background: #3d1f54;
   padding: 56px 8% 32px;
 }
 
@@ -218,7 +218,7 @@ footer {
 
 .footer-brand img { height: 52px; margin-bottom: 16px; }
 .footer-brand p {
-  font-size: 0.88rem; color: var(--warm); line-height: 1.7;
+  font-size: 0.88rem; color: var(--lavender); line-height: 1.7;
   max-width: 300px;
 }
 
@@ -230,7 +230,7 @@ footer {
 
 .footer-col a {
   display: block;
-  font-size: 0.88rem; color: #b0a490;
+  font-size: 0.88rem; color: var(--lavender);
   text-decoration: none; margin-bottom: 10px;
   transition: color 0.2s;
 }
@@ -238,23 +238,23 @@ footer {
 .footer-col a:hover { color: var(--yellow); }
 
 .footer-bottom {
-  border-top: 1px solid #3a3020;
+  border-top: 1px solid #6a3d8a;
   padding-top: 24px;
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 12px;
-  font-size: 0.78rem; color: #7a6e5a;
+  font-size: 0.78rem; color: var(--lavender);
 }
 
 .footer-bottom a { color: var(--gold); text-decoration: none; }
 
-/* â”€â”€ SOCIALS â”€â”€ */
+/* ── SOCIALS ── */
 .social-row {
   display: flex; gap: 12px; flex-wrap: wrap;
 }
 
 .social-link {
   display: flex; align-items: center; gap: 8px;
-  background: #3a3020;
+  background: #6a3d8a;
   color: var(--warm);
   text-decoration: none;
   padding: 9px 18px;
@@ -265,7 +265,7 @@ footer {
 
 .social-link:hover { background: var(--purple); color: var(--cream); }
 
-/* â”€â”€ PAGE HERO BANNER â”€â”€ */
+/* ── PAGE HERO BANNER ── */
 .page-hero {
   background: var(--yellow);
   padding: 72px 8% 64px;
@@ -293,7 +293,7 @@ footer {
   position: relative; z-index: 1;
 }
 
-/* â”€â”€ RESPONSIVE â”€â”€ */
+/* ── RESPONSIVE ── */
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
