@@ -39,8 +39,8 @@
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: var(--text);
-      color: var(--yellow);
+      background: var(--purple);
+      color: var(--cream);
       font-size: 0.68rem; font-weight: 700;
       letter-spacing: 0.12em; text-transform: uppercase;
       padding: 6px 16px; border-radius: 50px;
@@ -50,7 +50,7 @@
     .hero-badge::before {
       content: '';
       width: 6px; height: 6px; border-radius: 50%;
-      background: var(--yellow);
+      background: var(--lavender);
       animation: pulse 2s infinite;
     }
 
@@ -84,11 +84,17 @@
       display: flex; align-items: center; justify-content: center;
     }
 
-    .hero-image img {
-      width: 100%; max-width: 460px;
-      border-radius: 28px;
-      box-shadow: 0 28px 64px rgba(44,36,22,0.22);
-      object-fit: cover; aspect-ratio: 4/3;
+    .hero-logo-display {
+      background: var(--cream);
+      border-radius: 36px;
+      padding: 48px;
+      box-shadow: 0 28px 64px rgba(44,36,22,0.18);
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; max-width: 400px;
+    }
+
+    .hero-logo-display img {
+      width: 100%; max-width: 280px; height: auto;
     }
 
     /* ── STATS BAR ── */
@@ -251,11 +257,13 @@
     <p>Heads Up Mentors provides free, high-quality mentoring to empower the next generation. We believe every student deserves the same opportunity to succeed.</p>
     <div class="hero-buttons">
       <a class="btn-primary" href="get-involved.html">Get Involved</a>
-      <a class="btn-yellow" href="about.html" style="background:var(--text); color:var(--yellow);">Learn More</a>
+      <a class="btn-outline" href="about.html">Learn More</a>
     </div>
   </div>
   <div class="hero-image fade-up">
-    <img src="https://headsupmentorshome.carrd.co/assets/images/image01.png?v=fd509c23" alt="Heads Up Mentors students and mentors" />
+    <div class="hero-logo-display">
+      <img src="assets/logo.svg" alt="Heads Up Mentors Logo" />
+    </div>
   </div>
 </section>
 
